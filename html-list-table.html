@@ -9,9 +9,17 @@
         table, th, td {
             border: 1px solid black;
         }
+        thead {
+            background-color: black;
+            color: white;
+        }
+        tfoot {
+            background-color: gray;
+        }
     </style>
 </head>
 <body>
+    <h1>서지훈의 html</h1>
     <!-- Ordered List -->
     <!-- 순서가 있는 리스트 -->
     <!-- 리스트의 아이템을 지정할 땐 <li></li> 요소 사용 -->
@@ -57,26 +65,60 @@
             <td>프로그래밍 언어 응용</td>
         </tr>
     </table>
+    <br />
 
     <!-- <thead>, <tbody>, <tfoot> -->
     <!-- 테이블을 헤드, 바디, 풋으로 구조화를 시켜주는 요소 -->
     <table>
         <thead>
             <tr>
-                <th></th>
-                <th></th>
+                <th>교육</th>
+                <th>능력단위명</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td></td>
-                <td></td>
+                <td>(전공)JAVA 프로그래밍 [정보기술개발]</td>
+                <td>프로그래밍 언어 활용</td>
+            </tr>
+            <tr>
+                <td>(전공)JAVA 프로그래밍 [정보기술개발]</td>
+                <td>프로그래밍 언어 응용</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <td></td>
-                <td></td>
+                <td>2개</td>
+                <td>2개</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br />
+
+    <!-- colspan / rowspan -->
+    <!-- 행의 사이즈를 오른쪽으로 지정한 값만큼 증가시키는 속성 -->
+    <!-- 열의 사이즈를 아래쪽으로 지정한 값만큼 증가시키는 속성 -->
+    <table>
+        <thead>
+            <tr>
+                <th>교육</th>
+                <th colspan="2">능력단위명</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">(전공)JAVA 프로그래밍 [정보기술개발]</td>
+                <td rowspan="2">프로그래밍 언어</td>
+                <td>활용</td>
+            </tr>
+            <tr>
+                <td>응용</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>2개</td>
+                <td colspan="2">2개</td>
             </tr>
         </tfoot>
     </table>
