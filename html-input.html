@@ -95,6 +95,17 @@
         <input type="range" name="range" min="-10" max="10" step="2" value="0" />
         <button type="submit">제출</button>
     </form>
+    <br />
+
+    <!--# file, hidden type -->
+    <!--* file 타입은 파일을 입력 할 때 사용 -->
+    <!--* hidden 타입은 화면에 보여주지 않고자 할 때 사용 -->
+
+    <form enctype="multipart/form-data">
+        <input type="file" name="file" />
+        <input type="hidden" name="hidden" value="hidden-value" />
+        <button type="submit">제출</button>
+    </form>
 
 </body>
 </html>
