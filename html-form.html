@@ -16,6 +16,7 @@
         <button type="submit">로그인</button>
     </form>
     <br />
+
     <!-- Form 속성 -->
     <!-- action / method 속성 -->
     <!-- action : Form을 제출 할때 어떠한 리소스로 제출할 것인지 -->
@@ -32,6 +33,7 @@
         <button type="submit">POST 전송</button>
     </form>
     <br />
+    
     <!-- Form Button -->
     <form>
         <input name="first" />
@@ -39,6 +41,29 @@
         <!-- submit: form을 action에 method 방식으로 요청을 보내는 형식 -->
         <button type="submit">제출</button>
         <input type="submit" value="인풋 제출" />
+        <!-- reset: form의 input value 들을 초기값으로 변경 -->
+        <button type="reset">초기화</button>
+        <input type="reset" value="인풋 초기화" />
+    </form>
+    <br />
+
+    <!-- Field Set / Legend 요소 -->
+    <!-- form의 field들을 그룹화 지어주는 요소 -->
+    <!-- Label 요소 -->
+    <!-- form의 요소에 라벨을 달아주는 요소 -->
+    <!-- label 요소의 for 속성에 form의 요소의 id 속성 값을 -->
+    <!-- 지정하면 해당 label 요소와 from의 요소가 연결 -->
+    <form>
+        <fieldset>
+            <legend>예약 정보</legend>
+            <label for="reservation_input">예약일</label>
+            <input type="date" id="reservation_input"/>
+        </fieldset>
+        <fieldset>
+            <legend>예약자 정보</legend>
+            <input />
+            <input />
+        </fieldset>
     </form>
 
 </body>
