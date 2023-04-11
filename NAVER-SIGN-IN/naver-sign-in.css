@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+}
+body {
+    height: 100%;
+    position: relative;
+}
+.header {
+    padding-bottom: 48px;
+}
+.header-inner {
+    position: relative;
+    width: 743px;
+    margin: 0 auto;
+    padding-top: 108px;
+    text-align: center;
+}
+.logo {
+    display: inline-block;
+    background-image: url(https://ssl.pstatic.net/static/nid/login/m_sp_00_common_978240a6.png);
+    background-size: 244px 107px;
+    background-position: 0 -51px;
+    background-repeat: no-repeat;
+    width: 155px;
+    height: 30px;
+}
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.lang {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+}
+.select {
+    position: relative;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    width: 100%;
+    min-width: 95px;
+    height: 30px;
+    padding: 4px 10px 6px 8px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    cursor: pointer;
+    z-index: 1;
+}

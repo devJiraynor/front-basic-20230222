@@ -5,28 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>네이버 : 로그인</title>
-    <style>
-        * {
-            margin: 0;
-        }
-        body {
-            height: 100%;
-            position: relative;
-        }
-        .header {
-            background-color: red;
-            padding-bottom: 48px;
-        }
-        .header-inner {
-            background-color: antiquewhite;
-            width: 743px;
-            margin: 0 auto;
-            padding-top: 108px;
-        }
-        .logo {
-            background-image: url(https://ssl.pstatic.net/static/nid/login/m_sp_00_common_978240a6.png);
-        }
-    </style>
+    <link rel="stylesheet" href="./naver-sign-in.css" /> 
 </head>
 <body>
     <!--# Header -->
@@ -36,7 +15,7 @@
                 <h1 class="blind">NAVER</h1>
             </a>
             <div class="lang">
-                <select>
+                <select class="select">
                     <option>한국어</option>
                     <option>English</option>
                 </select>
@@ -45,7 +24,22 @@
     </div>
     <!--# Main -->
     <div class="main">
+        <div class="content">
+            <!--* 로그인 wrapper -->
+            <div class="sign-in-wrapper">
+                <form action="https://nid.naver.com/nidlogin.login" method="POST">
 
+                </form>
+            </div>
+            <!--* 페이지 이동 네비게이션 -->
+            <ul class="find-wrapper">
+
+            </ul>
+            <!--* 광고 배너 -->
+            <div class="banner-wrapper">
+
+            </div>
+        </div>
     </div>
     <!--# Footer -->
     <div class="footer">
