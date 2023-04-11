@@ -9,11 +9,22 @@ ul {
     list-style: none;
     padding: 0px;
 }
+li {
+    margin: 0;
+    padding: 0;
+}
 input {
     border-radius: 0;
     border: none;
     background: 0 0;
     outline: 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+button {
+    cursor: pointer;
+}
+a {
     text-decoration: none;
     cursor: pointer;
 }
@@ -94,6 +105,12 @@ input {
     border-radius: 6px 6px 0 0;
     box-shadow: none;
 }
+.input-row:last-child {
+    border-radius: 0 0 6px 6px;
+}
+.input-row+.input-row {
+    margin-top: -1px;
+}
 .icon-cell {
     display: table-cell;
     width: 24px;
@@ -111,6 +128,18 @@ input {
     background-image: url(https://ssl.pstatic.net/static/nid/login/m_sp_01_login_008d5216.png);
     background-size: 266px 225px;
 }
+.icon-pw {
+    position: absolute;
+    top: 50%;
+    left: 17px;
+    margin-top: -8px;
+    background-position: -129px -203px;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    background-image: url(https://ssl.pstatic.net/static/nid/login/m_sp_01_login_008d5216.png);
+    background-size: 266px 225px;
+}
 .input-text {
     position: relative;
     display: table-cell;
@@ -122,4 +151,95 @@ input {
     letter-spacing: -0.5px;
     color: #222;
     z-index: 4;
+}
+
+.sign-in-keep-wrapper {
+    position: relative;
+    margin-top: 13px;
+    padding-right: 90px;
+}
+
+.keep-check {
+    position: relative;
+    padding-left: 23px;
+}
+.ip-check {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 38px;
+}
+.input-keep {
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    width: 15px;
+    height: 15px;
+}
+.keep-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: -244px -87px;
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    background-image: url(https://ssl.pstatic.net/static/nid/login/m_sp_01_login_008d5216.png);
+    background-size: 266px 225px;
+}
+.keep-text {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    color: #777;
+}
+
+.sigin-in-button-wrapper {
+    margin-top: 38px;
+}
+
+.sign-in-button {
+    display: block;
+    width: -webkit-fill-available;
+    padding: 13px 0 13px;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: #03c75a;
+}
+.button-text {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #fff;
+}
+
+.find-wrapper {
+    padding: 20px 0 35px;
+    text-align: center;
+}
+
+.find-wrapper li {
+    position: relative;
+    display: inline-block;
+}
+.find-text {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+    color: #888;
+}
+
+.find-wrapper li+li::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 12px;
+    width: 1px;
+    height: 12px;
+    border-radius: 0.5px;
+    background-color: #dadada;
 }
