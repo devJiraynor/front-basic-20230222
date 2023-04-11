@@ -5,6 +5,18 @@ body {
     height: 100%;
     position: relative;
 }
+ul {
+    list-style: none;
+    padding: 0px;
+}
+input {
+    border-radius: 0;
+    border: none;
+    background: 0 0;
+    outline: 0;
+    text-decoration: none;
+    cursor: pointer;
+}
 .header {
     padding-bottom: 48px;
 }
@@ -49,4 +61,65 @@ body {
     border-radius: 0;
     cursor: pointer;
     z-index: 1;
+}
+
+.sign-in-wrapper {
+    width: 460px;
+    margin: 0 auto;
+}
+.panel-wrapper {
+    position: relative;
+    z-index: 3;
+    margin-top: -8px;
+}
+.panel-item {
+    border: 1px solid #c6c6c6;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 5px 8px 0 rgba(68, 68, 68, 0.04);
+}
+.panel-inner {
+    padding: 20px 28px;
+}
+.input-row {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    width: -webkit-fill-available;
+    height: 100%;
+    border: 1px solid #dadada;
+    padding: 14px 17px 13px;
+}
+.input-row:first-child {
+    border-radius: 6px 6px 0 0;
+    box-shadow: none;
+}
+.icon-cell {
+    display: table-cell;
+    width: 24px;
+    vertical-align: middle;
+}
+.icon-id {
+    position: absolute;
+    top: 50%;
+    left: 17px;
+    margin-top: -8px;
+    background-position: -93px -203px;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    background-image: url(https://ssl.pstatic.net/static/nid/login/m_sp_01_login_008d5216.png);
+    background-size: 266px 225px;
+}
+.input-text {
+    position: relative;
+    display: table-cell;
+    padding-right: 30px;
+    width: -webkit-fill-available;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: -0.5px;
+    color: #222;
+    z-index: 4;
 }
