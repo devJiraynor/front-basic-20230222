@@ -107,3 +107,12 @@ console.log(number);
 console.log(otherArray);
 
 //# 함수 //
+function function1(arg, arg2) {
+
+}
+function1(1, 2);
+
+const function2 = (arg1, arg2) => {
+
+} 
+function2(1, 2);
