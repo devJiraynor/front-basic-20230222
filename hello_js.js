@@ -46,9 +46,64 @@ let nullVariable = null;
 console.log(typeof(nullVariable));
 //*    배열 : [] 
 let arrayVariable = [1, 'A', false];
+arrayVariable[0];
 //*    객체 : {}
 let objectVariable = { 
-    key: 'value',
-    name: 'John',
-    age: 20
+    "key": "value",
+    "name": "John",
+    "age": 20,
+    "object": {
+        "key1": 1
+    }
+};
+
+//# 연산자 //
+//* 1. 나눗셈 연산자 //
+let number1 = 10 / 3;
+console.log(number1);
+//* 2. 제곱 연산자 (**) //
+let number2 = 10 ** 3;
+console.log(number2);
+//* 3. 비교연산 ==, === 
+let numberValue10 = 10;
+let stringValue10 = '10';
+console.log(numberValue10 == stringValue10);
+console.log(numberValue10 === stringValue10);
+
+//# if 조건 
+let tmpValue = null;
+if (tmpValue) console.log('true');
+else  console.log('false');
+
+//# class //
+class Human {
+    name;
+    age;
+    address;
+    constructor(name, age, address) {
+        this.name = name;
+        this.age = age;
+        this.address = address;
+    }
 }
+
+let humanObject = new Human('John', 30, '부산');
+console.log(humanObject.name);
+
+//# 비구조화 할당 //
+// const { name, age, address } = humanObject;
+let { name, ...others } = humanObject;
+console.log(name);
+console.log(others);
+
+name = 'Micle';
+humanObject = { ...humanObject, name };
+// { name, age, address, name };
+console.log(humanObject);
+
+const tmpArray = [1, 'A', true];
+const [number, ...otherArray] = tmpArray;
+console.log(number);
+console.log(otherArray);
+
+//# 함수 //
