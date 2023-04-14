@@ -1,8 +1,8 @@
 console.log('Hello Typescript!');
 
 //# 변수 //
-var number: number;
-number = 10;
+// let number: number;
+// number = 10;
 // number = 'string';
 let string = 'string';
 // string = 10;
@@ -46,3 +46,12 @@ interface Object4 {
     prop4: number;
 }
 const object4: Object3 & Object4 = { prop1: 'prop1', prop2: 2, prop3: 'prop3', prop4: 4 }
+
+//* 4. enum //
+enum Fruits {
+    APPLE = '사과',
+    BANANA = '바나나',
+    MELON = '메론'
+}
+const fruit: Fruits = Fruits.APPLE;
+console.log(fruit);
